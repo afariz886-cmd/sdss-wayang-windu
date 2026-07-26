@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b0078b0de3665d1656d2c7d10c4ec70c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b0078b0de3665d1656d2c7d10c4ec70c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b0078b0de3665d1656d2c7d10c4ec70c = L.map(
+                "map_b0078b0de3665d1656d2c7d10c4ec70c",
+                {
+                    center: [-7.212, 107.632],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6fa8097a7cf2d07f315c077cffa42291 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6fa8097a7cf2d07f315c077cffa42291.addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+            var tile_layer_b7d46e87d582276493b0fe15fd0b2897 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b7d46e87d582276493b0fe15fd0b2897.addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+            var circle_marker_e3e6138d72fa79018c752e5a0d0020fb = L.circleMarker(
+                [-7.205, 107.635],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+        var popup_6fbf30aff4f78a79307a47ea01584138 = L.popup({
+  "maxWidth": 270,
+});
+
+        
+            
+                var i_frame_cef0c5bc2498e3ca9df34b6243081ae1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgd2lkdGg6IDI1MHB4OyI+CiAgICAgICAgPGg0IHN0eWxlPSJjb2xvcjogZ3JlZW47IG1hcmdpbi1ib3R0b206IDJweDsiPlN1bXVyIEVrc3Bsb3Jhc2kgQTwvaDQ+CiAgICAgICAgPGhyIHN0eWxlPSJtYXJnaW46IDVweCAwOyI+CiAgICAgICAgPGI+UmVrb21lbmRhc2kgU2lzdGVtOjwvYj48YnI+IAogICAgICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogZ3JlZW47IGZvbnQtd2VpZ2h0OiBib2xkOyI+RElSRUtPTUVOREFTSUtBTjogU3VodSBUaW5nZ2kgJiBUYW5haCBTdGFiaWw8L3NwYW4+PGJyPjxicj4KICAgICAgICA8Yj5QYXJhbWV0ZXIgVGVrbmlzOjwvYj48YnI+CiAgICAgICAgJiM4MjI2OyBFc3RpbWFzaSBTdWh1OiA4NSAmZGVnO0M8YnI+CiAgICAgICAgJiM4MjI2OyBMYWp1IFN1YnNpZGVuOiAtMiBtbS90YWh1bjxicj4KICAgIDwvZGl2PgogICAg" width="270" style="border:none !important;" height="160"></iframe>`)[0];
+                popup_6fbf30aff4f78a79307a47ea01584138.setContent(i_frame_cef0c5bc2498e3ca9df34b6243081ae1);
+            
+        
+
+        circle_marker_e3e6138d72fa79018c752e5a0d0020fb.bindPopup(popup_6fbf30aff4f78a79307a47ea01584138)
+        ;
+
+        
+    
+    
+            circle_marker_e3e6138d72fa79018c752e5a0d0020fb.bindTooltip(
+                `<div>
+                     Klik untuk analisis lokasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ab5045b8ecc8d2227eff782d302062e = L.circleMarker(
+                [-7.22, 107.63],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+        var popup_0cfcfca3f17d1248c9b7cbaa987e6ce0 = L.popup({
+  "maxWidth": 270,
+});
+
+        
+            
+                var i_frame_1105d31e813dbe1841a38620020db65f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgd2lkdGg6IDI1MHB4OyI+CiAgICAgICAgPGg0IHN0eWxlPSJjb2xvcjogb3JhbmdlOyBtYXJnaW4tYm90dG9tOiAycHg7Ij5TdW11ciBFa3NwbG9yYXNpIEI8L2g0PgogICAgICAgIDxociBzdHlsZT0ibWFyZ2luOiA1cHggMDsiPgogICAgICAgIDxiPlJla29tZW5kYXNpIFNpc3RlbTo8L2I+PGJyPiAKICAgICAgICA8c3BhbiBzdHlsZT0iY29sb3I6IG9yYW5nZTsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij5QRVJMVSBLQUpJQU46IEt1cmFuZyBFZmlzaWVuPC9zcGFuPjxicj48YnI+CiAgICAgICAgPGI+UGFyYW1ldGVyIFRla25pczo8L2I+PGJyPgogICAgICAgICYjODIyNjsgRXN0aW1hc2kgU3VodTogNDAgJmRlZztDPGJyPgogICAgICAgICYjODIyNjsgTGFqdSBTdWJzaWRlbjogLTEgbW0vdGFodW48YnI+CiAgICA8L2Rpdj4KICAgIA==" width="270" style="border:none !important;" height="160"></iframe>`)[0];
+                popup_0cfcfca3f17d1248c9b7cbaa987e6ce0.setContent(i_frame_1105d31e813dbe1841a38620020db65f);
+            
+        
+
+        circle_marker_0ab5045b8ecc8d2227eff782d302062e.bindPopup(popup_0cfcfca3f17d1248c9b7cbaa987e6ce0)
+        ;
+
+        
+    
+    
+            circle_marker_0ab5045b8ecc8d2227eff782d302062e.bindTooltip(
+                `<div>
+                     Klik untuk analisis lokasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0e5e6634830281db2581ac2dc53ba97 = L.circleMarker(
+                [-7.21, 107.64],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+        var popup_58627fa8bb8b7b0a24acacd329cbe641 = L.popup({
+  "maxWidth": 270,
+});
+
+        
+            
+                var i_frame_ef7bbfe55853025ae2ac74be65ded642 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgd2lkdGg6IDI1MHB4OyI+CiAgICAgICAgPGg0IHN0eWxlPSJjb2xvcjogcmVkOyBtYXJnaW4tYm90dG9tOiAycHg7Ij5TdW11ciBFa3NwbG9yYXNpIEM8L2g0PgogICAgICAgIDxociBzdHlsZT0ibWFyZ2luOiA1cHggMDsiPgogICAgICAgIDxiPlJla29tZW5kYXNpIFNpc3RlbTo8L2I+PGJyPiAKICAgICAgICA8c3BhbiBzdHlsZT0iY29sb3I6IHJlZDsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij5CQUhBWUE6IFJpc2lrbyBEZWZvcm1hc2kgUGFyYWg8L3NwYW4+PGJyPjxicj4KICAgICAgICA8Yj5QYXJhbWV0ZXIgVGVrbmlzOjwvYj48YnI+CiAgICAgICAgJiM4MjI2OyBFc3RpbWFzaSBTdWh1OiA5MCAmZGVnO0M8YnI+CiAgICAgICAgJiM4MjI2OyBMYWp1IFN1YnNpZGVuOiAtMTUgbW0vdGFodW48YnI+CiAgICA8L2Rpdj4KICAgIA==" width="270" style="border:none !important;" height="160"></iframe>`)[0];
+                popup_58627fa8bb8b7b0a24acacd329cbe641.setContent(i_frame_ef7bbfe55853025ae2ac74be65ded642);
+            
+        
+
+        circle_marker_f0e5e6634830281db2581ac2dc53ba97.bindPopup(popup_58627fa8bb8b7b0a24acacd329cbe641)
+        ;
+
+        
+    
+    
+            circle_marker_f0e5e6634830281db2581ac2dc53ba97.bindTooltip(
+                `<div>
+                     Klik untuk analisis lokasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4560c68aace184753b0c3a9fe47533ce = L.circleMarker(
+                [-7.215, 107.625],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+        
+    
+        var popup_908fd5663f29e452a7aa99e6cc77e076 = L.popup({
+  "maxWidth": 270,
+});
+
+        
+            
+                var i_frame_a5321842661cf6b4c4747d43fb17776f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgd2lkdGg6IDI1MHB4OyI+CiAgICAgICAgPGg0IHN0eWxlPSJjb2xvcjogZ3JlZW47IG1hcmdpbi1ib3R0b206IDJweDsiPlN1bXVyIEVrc3Bsb3Jhc2kgRDwvaDQ+CiAgICAgICAgPGhyIHN0eWxlPSJtYXJnaW46IDVweCAwOyI+CiAgICAgICAgPGI+UmVrb21lbmRhc2kgU2lzdGVtOjwvYj48YnI+IAogICAgICAgIDxzcGFuIHN0eWxlPSJjb2xvcjogZ3JlZW47IGZvbnQtd2VpZ2h0OiBib2xkOyI+RElSRUtPTUVOREFTSUtBTjogU3VodSBUaW5nZ2kgJiBUYW5haCBTdGFiaWw8L3NwYW4+PGJyPjxicj4KICAgICAgICA8Yj5QYXJhbWV0ZXIgVGVrbmlzOjwvYj48YnI+CiAgICAgICAgJiM4MjI2OyBFc3RpbWFzaSBTdWh1OiA5NSAmZGVnO0M8YnI+CiAgICAgICAgJiM4MjI2OyBMYWp1IFN1YnNpZGVuOiAtNCBtbS90YWh1bjxicj4KICAgIDwvZGl2PgogICAg" width="270" style="border:none !important;" height="160"></iframe>`)[0];
+                popup_908fd5663f29e452a7aa99e6cc77e076.setContent(i_frame_a5321842661cf6b4c4747d43fb17776f);
+            
+        
+
+        circle_marker_4560c68aace184753b0c3a9fe47533ce.bindPopup(popup_908fd5663f29e452a7aa99e6cc77e076)
+        ;
+
+        
+    
+    
+            circle_marker_4560c68aace184753b0c3a9fe47533ce.bindTooltip(
+                `<div>
+                     Klik untuk analisis lokasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_c98ef09352130f693fcb34c54ac65137_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_6fa8097a7cf2d07f315c077cffa42291,
+                    "Citra Satelit Esri" : tile_layer_b7d46e87d582276493b0fe15fd0b2897,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_c98ef09352130f693fcb34c54ac65137 = L.control.layers(
+                layer_control_c98ef09352130f693fcb34c54ac65137_layers.base_layers,
+                layer_control_c98ef09352130f693fcb34c54ac65137_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_b0078b0de3665d1656d2c7d10c4ec70c);
+
+        
+</script>
+</html>
