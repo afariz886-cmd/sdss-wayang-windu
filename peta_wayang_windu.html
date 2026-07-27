@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb3bf3c561243b228bf08f4123f7aaef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_eb3bf3c561243b228bf08f4123f7aaef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_eb3bf3c561243b228bf08f4123f7aaef = L.map(
+                "map_eb3bf3c561243b228bf08f4123f7aaef",
+                {
+                    center: [-7.218, 107.634],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6039c4e5d082b756487e39d30acaad16 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6039c4e5d082b756487e39d30acaad16.addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+            var polygon_0746c5c9fd83733b876d3941886811f6 = L.polygon(
+                [[-7.195, 107.61], [-7.195, 107.66], [-7.24, 107.66], [-7.24, 107.61], [-7.195, 107.61]],
+                {"bubblingMouseEvents": true, "color": "#00ffcc", "dashArray": "5, 5", "dashOffset": null, "fill": true, "fillColor": "#00ffcc", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+            polygon_0746c5c9fd83733b876d3941886811f6.bindTooltip(
+                `<div>
+                     <div style="font-size:14px;"><b>Batas Reservoir Panas Bumi Wayang Windu</b></div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29cfd80437754088cd39bb612b1b6f66 = L.circleMarker(
+                [-7.203359947132555, 107.63879446331876],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_3870ec19f6b437b0a50422c9ed14bcb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff14c6d0f6d35e371968e639f4dc0e36 = $(`<div id="html_ff14c6d0f6d35e371968e639f4dc0e36" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 1</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 112 &deg;C<br>         <b>Risiko Subsidence:</b> 8.2 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_3870ec19f6b437b0a50422c9ed14bcb9.setContent(html_ff14c6d0f6d35e371968e639f4dc0e36);
+            
+        
+
+        circle_marker_29cfd80437754088cd39bb612b1b6f66.bindPopup(popup_3870ec19f6b437b0a50422c9ed14bcb9)
+        ;
+
+        
+    
+    
+            circle_marker_29cfd80437754088cd39bb612b1b6f66.bindTooltip(
+                `<div>
+                     Evaluasi Titik 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c72e685359befb56607de513e5f89ac = L.circleMarker(
+                [-7.233055912454418, 107.64341753396405],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_e5beed3dd5a5a307f7a724b61c7609e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_262ec34db8dfcdc0fa53da45970b618e = $(`<div id="html_262ec34db8dfcdc0fa53da45970b618e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 2</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 182 &deg;C<br>         <b>Risiko Subsidence:</b> 11.9 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_e5beed3dd5a5a307f7a724b61c7609e0.setContent(html_262ec34db8dfcdc0fa53da45970b618e);
+            
+        
+
+        circle_marker_2c72e685359befb56607de513e5f89ac.bindPopup(popup_e5beed3dd5a5a307f7a724b61c7609e0)
+        ;
+
+        
+    
+    
+            circle_marker_2c72e685359befb56607de513e5f89ac.bindTooltip(
+                `<div>
+                     Evaluasi Titik 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edf5bc385cd0a1e01ce02e571b12891c = L.circleMarker(
+                [-7.219360644371762, 107.63842805022605],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_778c66a730568875877c250e39ced7af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d14ffa76fb5846fe03c9a783fbf4f4c = $(`<div id="html_0d14ffa76fb5846fe03c9a783fbf4f4c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 3</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 235 &deg;C<br>         <b>Risiko Subsidence:</b> 1.0 cm/tahun<br>         <br>         <div style="background-color: green; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>SANGAT DIREKOMENDASIKAN</b>         </div>     </div>     </div>`)[0];
+                popup_778c66a730568875877c250e39ced7af.setContent(html_0d14ffa76fb5846fe03c9a783fbf4f4c);
+            
+        
+
+        circle_marker_edf5bc385cd0a1e01ce02e571b12891c.bindPopup(popup_778c66a730568875877c250e39ced7af)
+        ;
+
+        
+    
+    
+            circle_marker_edf5bc385cd0a1e01ce02e571b12891c.bindTooltip(
+                `<div>
+                     Evaluasi Titik 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d61182747c704f89ab85e76025804a99 = L.circleMarker(
+                [-7.21897658376976, 107.64187647386989],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_feb58ab5b71d2323decb2692228d6550 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bb9f816fb0aebea536982fccc8907e1 = $(`<div id="html_4bb9f816fb0aebea536982fccc8907e1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 4</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 190 &deg;C<br>         <b>Risiko Subsidence:</b> 4.7 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_feb58ab5b71d2323decb2692228d6550.setContent(html_4bb9f816fb0aebea536982fccc8907e1);
+            
+        
+
+        circle_marker_d61182747c704f89ab85e76025804a99.bindPopup(popup_feb58ab5b71d2323decb2692228d6550)
+        ;
+
+        
+    
+    
+            circle_marker_d61182747c704f89ab85e76025804a99.bindTooltip(
+                `<div>
+                     Evaluasi Titik 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e4997b75b33f1e3b3937c627d37dc86 = L.circleMarker(
+                [-7.203110516503763, 107.64951048888864],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_35642dfa3dc729971ab8f66b285b1e9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df7240357897601b45834e1f02c48219 = $(`<div id="html_df7240357897601b45834e1f02c48219" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 5</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 224 &deg;C<br>         <b>Risiko Subsidence:</b> 9.8 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_35642dfa3dc729971ab8f66b285b1e9e.setContent(html_df7240357897601b45834e1f02c48219);
+            
+        
+
+        circle_marker_9e4997b75b33f1e3b3937c627d37dc86.bindPopup(popup_35642dfa3dc729971ab8f66b285b1e9e)
+        ;
+
+        
+    
+    
+            circle_marker_9e4997b75b33f1e3b3937c627d37dc86.bindTooltip(
+                `<div>
+                     Evaluasi Titik 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d71b4efad1ec309b71296ea45a218d04 = L.circleMarker(
+                [-7.216925150985382, 107.63310156545515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_822a8e8c772df4c6a87bc8b261e38e76 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66690ef62597469d2847ba6dccea11c7 = $(`<div id="html_66690ef62597469d2847ba6dccea11c7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 6</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 170 &deg;C<br>         <b>Risiko Subsidence:</b> 4.9 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_822a8e8c772df4c6a87bc8b261e38e76.setContent(html_66690ef62597469d2847ba6dccea11c7);
+            
+        
+
+        circle_marker_d71b4efad1ec309b71296ea45a218d04.bindPopup(popup_822a8e8c772df4c6a87bc8b261e38e76)
+        ;
+
+        
+    
+    
+            circle_marker_d71b4efad1ec309b71296ea45a218d04.bindTooltip(
+                `<div>
+                     Evaluasi Titik 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_732c98f6726df19699c60dfc8c5438fa = L.circleMarker(
+                [-7.2134911084029865, 107.64820980496528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_8e7d85a8a8e725cc35b349cf6cd999fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8661bc0f296b17d91feff28e2da8fdce = $(`<div id="html_8661bc0f296b17d91feff28e2da8fdce" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 7</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 218 &deg;C<br>         <b>Risiko Subsidence:</b> 19.1 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_8e7d85a8a8e725cc35b349cf6cd999fe.setContent(html_8661bc0f296b17d91feff28e2da8fdce);
+            
+        
+
+        circle_marker_732c98f6726df19699c60dfc8c5438fa.bindPopup(popup_8e7d85a8a8e725cc35b349cf6cd999fe)
+        ;
+
+        
+    
+    
+            circle_marker_732c98f6726df19699c60dfc8c5438fa.bindTooltip(
+                `<div>
+                     Evaluasi Titik 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c640f3a0b86f8097cc8500d8967be698 = L.circleMarker(
+                [-7.2266639813403755, 107.64558939390447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_e163961e54f6c7fd247dfecbf0cd8dda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9eaf1fca67bef08d6b3371d467e01982 = $(`<div id="html_9eaf1fca67bef08d6b3371d467e01982" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 8</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 184 &deg;C<br>         <b>Risiko Subsidence:</b> 12.5 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_e163961e54f6c7fd247dfecbf0cd8dda.setContent(html_9eaf1fca67bef08d6b3371d467e01982);
+            
+        
+
+        circle_marker_c640f3a0b86f8097cc8500d8967be698.bindPopup(popup_e163961e54f6c7fd247dfecbf0cd8dda)
+        ;
+
+        
+    
+    
+            circle_marker_c640f3a0b86f8097cc8500d8967be698.bindTooltip(
+                `<div>
+                     Evaluasi Titik 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42eaeebd54081989bedeec492777bc4f = L.circleMarker(
+                [-7.201114870115212, 107.64143571651034],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_dd58d0b897a110bf62e48f5ad79c5031 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66015e9dcd51e53a29a84922d3215e10 = $(`<div id="html_66015e9dcd51e53a29a84922d3215e10" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 9</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 245 &deg;C<br>         <b>Risiko Subsidence:</b> 16.0 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_dd58d0b897a110bf62e48f5ad79c5031.setContent(html_66015e9dcd51e53a29a84922d3215e10);
+            
+        
+
+        circle_marker_42eaeebd54081989bedeec492777bc4f.bindPopup(popup_dd58d0b897a110bf62e48f5ad79c5031)
+        ;
+
+        
+    
+    
+            circle_marker_42eaeebd54081989bedeec492777bc4f.bindTooltip(
+                `<div>
+                     Evaluasi Titik 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c0621709f2fe8a5b4254a55b3fd7150 = L.circleMarker(
+                [-7.201783843200189, 107.6290517051868],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ca4556c111d2d02ed29c2668178c18ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_454dbcdbaa2b199463f630f089e2f3ed = $(`<div id="html_454dbcdbaa2b199463f630f089e2f3ed" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 10</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 189 &deg;C<br>         <b>Risiko Subsidence:</b> 13.3 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_ca4556c111d2d02ed29c2668178c18ea.setContent(html_454dbcdbaa2b199463f630f089e2f3ed);
+            
+        
+
+        circle_marker_9c0621709f2fe8a5b4254a55b3fd7150.bindPopup(popup_ca4556c111d2d02ed29c2668178c18ea)
+        ;
+
+        
+    
+    
+            circle_marker_9c0621709f2fe8a5b4254a55b3fd7150.bindTooltip(
+                `<div>
+                     Evaluasi Titik 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a0805c37fa6bd2d3b5008eac49358c5 = L.circleMarker(
+                [-7.206752953296177, 107.63465029890699],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_15166e148e9d09890c80404acfb1d631 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51b6fbd5738baf0b0639616578e69cb8 = $(`<div id="html_51b6fbd5738baf0b0639616578e69cb8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 11</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 208 &deg;C<br>         <b>Risiko Subsidence:</b> 16.9 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_15166e148e9d09890c80404acfb1d631.setContent(html_51b6fbd5738baf0b0639616578e69cb8);
+            
+        
+
+        circle_marker_9a0805c37fa6bd2d3b5008eac49358c5.bindPopup(popup_15166e148e9d09890c80404acfb1d631)
+        ;
+
+        
+    
+    
+            circle_marker_9a0805c37fa6bd2d3b5008eac49358c5.bindTooltip(
+                `<div>
+                     Evaluasi Titik 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a82bd0ff882ef28221db0e044dff350 = L.circleMarker(
+                [-7.205392548117056, 107.61811044524478],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_0542ef2d32983a3d46c30f8bf233fde8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86078f51c479a566c94eddb584dbce4e = $(`<div id="html_86078f51c479a566c94eddb584dbce4e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 12</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 248 &deg;C<br>         <b>Risiko Subsidence:</b> 17.4 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_0542ef2d32983a3d46c30f8bf233fde8.setContent(html_86078f51c479a566c94eddb584dbce4e);
+            
+        
+
+        circle_marker_8a82bd0ff882ef28221db0e044dff350.bindPopup(popup_0542ef2d32983a3d46c30f8bf233fde8)
+        ;
+
+        
+    
+    
+            circle_marker_8a82bd0ff882ef28221db0e044dff350.bindTooltip(
+                `<div>
+                     Evaluasi Titik 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e3ff7897c124f54cbf055c26b446c69 = L.circleMarker(
+                [-7.2365052397319864, 107.63676232546169],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_7dac7f390e383cbceb176790a8ecbeea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efbad1d869a27b8c911072fd63a685a6 = $(`<div id="html_efbad1d869a27b8c911072fd63a685a6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 13</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 195 &deg;C<br>         <b>Risiko Subsidence:</b> 8.3 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_7dac7f390e383cbceb176790a8ecbeea.setContent(html_efbad1d869a27b8c911072fd63a685a6);
+            
+        
+
+        circle_marker_4e3ff7897c124f54cbf055c26b446c69.bindPopup(popup_7dac7f390e383cbceb176790a8ecbeea)
+        ;
+
+        
+    
+    
+            circle_marker_4e3ff7897c124f54cbf055c26b446c69.bindTooltip(
+                `<div>
+                     Evaluasi Titik 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4e1102d0496fd8e010306a3900f94ad = L.circleMarker(
+                [-7.2265356283164275, 107.64408191410597],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_3840b98af4267a5d52a943a857e8d83c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffc3a33da0083e90008eb0c0d191e13a = $(`<div id="html_ffc3a33da0083e90008eb0c0d191e13a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 14</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 143 &deg;C<br>         <b>Risiko Subsidence:</b> 11.8 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_3840b98af4267a5d52a943a857e8d83c.setContent(html_ffc3a33da0083e90008eb0c0d191e13a);
+            
+        
+
+        circle_marker_d4e1102d0496fd8e010306a3900f94ad.bindPopup(popup_3840b98af4267a5d52a943a857e8d83c)
+        ;
+
+        
+    
+    
+            circle_marker_d4e1102d0496fd8e010306a3900f94ad.bindTooltip(
+                `<div>
+                     Evaluasi Titik 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1209d1e4f67cccb2ed1e054c756c191b = L.circleMarker(
+                [-7.222893820084045, 107.63012553746343],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_795201f83ff0f4246f90021b260ff558 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cc777113018e4ab4d13ec06ed5108bb = $(`<div id="html_5cc777113018e4ab4d13ec06ed5108bb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 15</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 157 &deg;C<br>         <b>Risiko Subsidence:</b> 12.6 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_795201f83ff0f4246f90021b260ff558.setContent(html_5cc777113018e4ab4d13ec06ed5108bb);
+            
+        
+
+        circle_marker_1209d1e4f67cccb2ed1e054c756c191b.bindPopup(popup_795201f83ff0f4246f90021b260ff558)
+        ;
+
+        
+    
+    
+            circle_marker_1209d1e4f67cccb2ed1e054c756c191b.bindTooltip(
+                `<div>
+                     Evaluasi Titik 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7237cc99d05b1ad45f0b4a4a1850430c = L.circleMarker(
+                [-7.225289080913057, 107.63414562650635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_34fddfe812197282bca3e5a6b2ca0e7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d840da63f9263bda763ffadd717bb31 = $(`<div id="html_2d840da63f9263bda763ffadd717bb31" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 16</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 190 &deg;C<br>         <b>Risiko Subsidence:</b> 17.7 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_34fddfe812197282bca3e5a6b2ca0e7f.setContent(html_2d840da63f9263bda763ffadd717bb31);
+            
+        
+
+        circle_marker_7237cc99d05b1ad45f0b4a4a1850430c.bindPopup(popup_34fddfe812197282bca3e5a6b2ca0e7f)
+        ;
+
+        
+    
+    
+            circle_marker_7237cc99d05b1ad45f0b4a4a1850430c.bindTooltip(
+                `<div>
+                     Evaluasi Titik 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7ef8d5345654a87f015c1cda74820ef = L.circleMarker(
+                [-7.237154288398252, 107.6498621334324],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_42220eec50b40e2a3be6786fb5b05a55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94653ce0035f1102ed6721f9745b2632 = $(`<div id="html_94653ce0035f1102ed6721f9745b2632" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 17</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 208 &deg;C<br>         <b>Risiko Subsidence:</b> 11.3 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_42220eec50b40e2a3be6786fb5b05a55.setContent(html_94653ce0035f1102ed6721f9745b2632);
+            
+        
+
+        circle_marker_b7ef8d5345654a87f015c1cda74820ef.bindPopup(popup_42220eec50b40e2a3be6786fb5b05a55)
+        ;
+
+        
+    
+    
+            circle_marker_b7ef8d5345654a87f015c1cda74820ef.bindTooltip(
+                `<div>
+                     Evaluasi Titik 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_416be6eaa47ceb50b34cb477e7648a39 = L.circleMarker(
+                [-7.203204554183304, 107.62952815320016],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_a1af8ebbff5491c6ef9fff3db5e48799 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4934138d0f2c6f82a8c5d8303889a22b = $(`<div id="html_4934138d0f2c6f82a8c5d8303889a22b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 18</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 165 &deg;C<br>         <b>Risiko Subsidence:</b> 14.6 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_a1af8ebbff5491c6ef9fff3db5e48799.setContent(html_4934138d0f2c6f82a8c5d8303889a22b);
+            
+        
+
+        circle_marker_416be6eaa47ceb50b34cb477e7648a39.bindPopup(popup_a1af8ebbff5491c6ef9fff3db5e48799)
+        ;
+
+        
+    
+    
+            circle_marker_416be6eaa47ceb50b34cb477e7648a39.bindTooltip(
+                `<div>
+                     Evaluasi Titik 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d167c96d43b15a6990ca392bd295bd08 = L.circleMarker(
+                [-7.234604814086736, 107.63991892921656],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_3dbf2127ba4871245b006b5083fb75f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51a0438ce6e2f3688b2a96041c74b18d = $(`<div id="html_51a0438ce6e2f3688b2a96041c74b18d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 19</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 107 &deg;C<br>         <b>Risiko Subsidence:</b> 14.3 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_3dbf2127ba4871245b006b5083fb75f4.setContent(html_51a0438ce6e2f3688b2a96041c74b18d);
+            
+        
+
+        circle_marker_d167c96d43b15a6990ca392bd295bd08.bindPopup(popup_3dbf2127ba4871245b006b5083fb75f4)
+        ;
+
+        
+    
+    
+            circle_marker_d167c96d43b15a6990ca392bd295bd08.bindTooltip(
+                `<div>
+                     Evaluasi Titik 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_174f8e55ea66ac38ef92c739ed9c568c = L.circleMarker(
+                [-7.206032945669846, 107.62389658666183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_f664bd13c2cd1e6e7a2fc4db8a199c1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a3b2a234b9f15898c865affce8d9e12 = $(`<div id="html_5a3b2a234b9f15898c865affce8d9e12" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 20</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 126 &deg;C<br>         <b>Risiko Subsidence:</b> 15.6 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_f664bd13c2cd1e6e7a2fc4db8a199c1c.setContent(html_5a3b2a234b9f15898c865affce8d9e12);
+            
+        
+
+        circle_marker_174f8e55ea66ac38ef92c739ed9c568c.bindPopup(popup_f664bd13c2cd1e6e7a2fc4db8a199c1c)
+        ;
+
+        
+    
+    
+            circle_marker_174f8e55ea66ac38ef92c739ed9c568c.bindTooltip(
+                `<div>
+                     Evaluasi Titik 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2109acdbad3a06119703a9fb39fedca7 = L.circleMarker(
+                [-7.205003493684491, 107.63497098838455],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_4490b2c7d98132d33b21b84513c1eeb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e358394a9cab3f55ff0a50525544ec4 = $(`<div id="html_0e358394a9cab3f55ff0a50525544ec4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 21</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 125 &deg;C<br>         <b>Risiko Subsidence:</b> 18.0 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_4490b2c7d98132d33b21b84513c1eeb1.setContent(html_0e358394a9cab3f55ff0a50525544ec4);
+            
+        
+
+        circle_marker_2109acdbad3a06119703a9fb39fedca7.bindPopup(popup_4490b2c7d98132d33b21b84513c1eeb1)
+        ;
+
+        
+    
+    
+            circle_marker_2109acdbad3a06119703a9fb39fedca7.bindTooltip(
+                `<div>
+                     Evaluasi Titik 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_896f1052b6be8f65284153c98976157a = L.circleMarker(
+                [-7.226879804108963, 107.61862418008027],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_f081f96352c4d776e075a2bf51bd3ac0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a7ec66902aa11fabfce14a4d911b008 = $(`<div id="html_3a7ec66902aa11fabfce14a4d911b008" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 22</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 184 &deg;C<br>         <b>Risiko Subsidence:</b> 11.2 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_f081f96352c4d776e075a2bf51bd3ac0.setContent(html_3a7ec66902aa11fabfce14a4d911b008);
+            
+        
+
+        circle_marker_896f1052b6be8f65284153c98976157a.bindPopup(popup_f081f96352c4d776e075a2bf51bd3ac0)
+        ;
+
+        
+    
+    
+            circle_marker_896f1052b6be8f65284153c98976157a.bindTooltip(
+                `<div>
+                     Evaluasi Titik 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77be66f7da718bd1f202b8caddcc1aa5 = L.circleMarker(
+                [-7.221890438590074, 107.63771777910077],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_a9af227db7e820eecaa62913ace7d24d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51cc4f153d721a39c9fb4b31c0f638be = $(`<div id="html_51cc4f153d721a39c9fb4b31c0f638be" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 23</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 228 &deg;C<br>         <b>Risiko Subsidence:</b> 10.8 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_a9af227db7e820eecaa62913ace7d24d.setContent(html_51cc4f153d721a39c9fb4b31c0f638be);
+            
+        
+
+        circle_marker_77be66f7da718bd1f202b8caddcc1aa5.bindPopup(popup_a9af227db7e820eecaa62913ace7d24d)
+        ;
+
+        
+    
+    
+            circle_marker_77be66f7da718bd1f202b8caddcc1aa5.bindTooltip(
+                `<div>
+                     Evaluasi Titik 23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79df0395830b39d725628238951454fc = L.circleMarker(
+                [-7.227532669591279, 107.6209604222058],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ece59870b6ddd22a519a5b4ef89fbcf8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e37cc71420c4e54fd20dd2ea7fedba6 = $(`<div id="html_5e37cc71420c4e54fd20dd2ea7fedba6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 24</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 172 &deg;C<br>         <b>Risiko Subsidence:</b> 20.0 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_ece59870b6ddd22a519a5b4ef89fbcf8.setContent(html_5e37cc71420c4e54fd20dd2ea7fedba6);
+            
+        
+
+        circle_marker_79df0395830b39d725628238951454fc.bindPopup(popup_ece59870b6ddd22a519a5b4ef89fbcf8)
+        ;
+
+        
+    
+    
+            circle_marker_79df0395830b39d725628238951454fc.bindTooltip(
+                `<div>
+                     Evaluasi Titik 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc1ca150fc74508dcce006002ab4c5b4 = L.circleMarker(
+                [-7.234412192109876, 107.6459052707113],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_628d75a5fe1e1c3a8b63825ec7d6ed81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4964b178b47621c0336340c145fddba4 = $(`<div id="html_4964b178b47621c0336340c145fddba4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 25</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 136 &deg;C<br>         <b>Risiko Subsidence:</b> 4.3 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_628d75a5fe1e1c3a8b63825ec7d6ed81.setContent(html_4964b178b47621c0336340c145fddba4);
+            
+        
+
+        circle_marker_bc1ca150fc74508dcce006002ab4c5b4.bindPopup(popup_628d75a5fe1e1c3a8b63825ec7d6ed81)
+        ;
+
+        
+    
+    
+            circle_marker_bc1ca150fc74508dcce006002ab4c5b4.bindTooltip(
+                `<div>
+                     Evaluasi Titik 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce0213a29792ec1f25ab8dc195232bff = L.circleMarker(
+                [-7.213465328293584, 107.63774489589186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_9e939b087bead4ae5ab6e368c3ade5b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85ab49674be45f5903c7f6277d739d3d = $(`<div id="html_85ab49674be45f5903c7f6277d739d3d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 26</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 196 &deg;C<br>         <b>Risiko Subsidence:</b> 12.2 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_9e939b087bead4ae5ab6e368c3ade5b7.setContent(html_85ab49674be45f5903c7f6277d739d3d);
+            
+        
+
+        circle_marker_ce0213a29792ec1f25ab8dc195232bff.bindPopup(popup_9e939b087bead4ae5ab6e368c3ade5b7)
+        ;
+
+        
+    
+    
+            circle_marker_ce0213a29792ec1f25ab8dc195232bff.bindTooltip(
+                `<div>
+                     Evaluasi Titik 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fd1846109f922a5c7f8528514f16f85 = L.circleMarker(
+                [-7.200389568578385, 107.64104215875253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_a86f3055b69e394ac2620c2bccdee4bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f397ac88c872d65e2bba081a6471ddc5 = $(`<div id="html_f397ac88c872d65e2bba081a6471ddc5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 27</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 103 &deg;C<br>         <b>Risiko Subsidence:</b> 9.7 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_a86f3055b69e394ac2620c2bccdee4bd.setContent(html_f397ac88c872d65e2bba081a6471ddc5);
+            
+        
+
+        circle_marker_2fd1846109f922a5c7f8528514f16f85.bindPopup(popup_a86f3055b69e394ac2620c2bccdee4bd)
+        ;
+
+        
+    
+    
+            circle_marker_2fd1846109f922a5c7f8528514f16f85.bindTooltip(
+                `<div>
+                     Evaluasi Titik 27
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_772cfb82b8af6315bf5601e306edf543 = L.circleMarker(
+                [-7.213282279864327, 107.63132880505394],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_d676f9725e7ee11363f491795b4fdeba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a075c47a9ebae317a4cc9a9b366c55b = $(`<div id="html_0a075c47a9ebae317a4cc9a9b366c55b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 28</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 176 &deg;C<br>         <b>Risiko Subsidence:</b> 9.3 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_d676f9725e7ee11363f491795b4fdeba.setContent(html_0a075c47a9ebae317a4cc9a9b366c55b);
+            
+        
+
+        circle_marker_772cfb82b8af6315bf5601e306edf543.bindPopup(popup_d676f9725e7ee11363f491795b4fdeba)
+        ;
+
+        
+    
+    
+            circle_marker_772cfb82b8af6315bf5601e306edf543.bindTooltip(
+                `<div>
+                     Evaluasi Titik 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25570eaa400c1c0edb63d531a3848949 = L.circleMarker(
+                [-7.235716030304557, 107.6148158259446],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_64597d2348095fdbc73dee9407e56d72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4796f8531c901880e7ba0d51bbd6c8f4 = $(`<div id="html_4796f8531c901880e7ba0d51bbd6c8f4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 29</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 236 &deg;C<br>         <b>Risiko Subsidence:</b> 5.0 cm/tahun<br>         <br>         <div style="background-color: green; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>SANGAT DIREKOMENDASIKAN</b>         </div>     </div>     </div>`)[0];
+                popup_64597d2348095fdbc73dee9407e56d72.setContent(html_4796f8531c901880e7ba0d51bbd6c8f4);
+            
+        
+
+        circle_marker_25570eaa400c1c0edb63d531a3848949.bindPopup(popup_64597d2348095fdbc73dee9407e56d72)
+        ;
+
+        
+    
+    
+            circle_marker_25570eaa400c1c0edb63d531a3848949.bindTooltip(
+                `<div>
+                     Evaluasi Titik 29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad27e0c9cd24b1573d0d3b08e9978a29 = L.circleMarker(
+                [-7.209451269946873, 107.6332815384999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_e175868ab618e0d5f319964d7c1e870e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75cffaad833bdc65337a5714285518e8 = $(`<div id="html_75cffaad833bdc65337a5714285518e8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 30</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 138 &deg;C<br>         <b>Risiko Subsidence:</b> 4.7 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_e175868ab618e0d5f319964d7c1e870e.setContent(html_75cffaad833bdc65337a5714285518e8);
+            
+        
+
+        circle_marker_ad27e0c9cd24b1573d0d3b08e9978a29.bindPopup(popup_e175868ab618e0d5f319964d7c1e870e)
+        ;
+
+        
+    
+    
+            circle_marker_ad27e0c9cd24b1573d0d3b08e9978a29.bindTooltip(
+                `<div>
+                     Evaluasi Titik 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e33b615fd650d8603948078d36db1609 = L.circleMarker(
+                [-7.222008316061837, 107.63236669560574],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_9922fe77bb7a60245be757115d81f955 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b4e9d5106cfe11a3818071e3c35bf7f = $(`<div id="html_6b4e9d5106cfe11a3818071e3c35bf7f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 31</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 241 &deg;C<br>         <b>Risiko Subsidence:</b> 16.3 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_9922fe77bb7a60245be757115d81f955.setContent(html_6b4e9d5106cfe11a3818071e3c35bf7f);
+            
+        
+
+        circle_marker_e33b615fd650d8603948078d36db1609.bindPopup(popup_9922fe77bb7a60245be757115d81f955)
+        ;
+
+        
+    
+    
+            circle_marker_e33b615fd650d8603948078d36db1609.bindTooltip(
+                `<div>
+                     Evaluasi Titik 31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7470e5089097b68864b517f0c6d3fc5f = L.circleMarker(
+                [-7.21588668746285, 107.6142487982995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_4bc2adb3d23587436eeafa9a5c380f23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8961d5121a879af1886963dc9f557542 = $(`<div id="html_8961d5121a879af1886963dc9f557542" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 32</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 131 &deg;C<br>         <b>Risiko Subsidence:</b> 12.8 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_4bc2adb3d23587436eeafa9a5c380f23.setContent(html_8961d5121a879af1886963dc9f557542);
+            
+        
+
+        circle_marker_7470e5089097b68864b517f0c6d3fc5f.bindPopup(popup_4bc2adb3d23587436eeafa9a5c380f23)
+        ;
+
+        
+    
+    
+            circle_marker_7470e5089097b68864b517f0c6d3fc5f.bindTooltip(
+                `<div>
+                     Evaluasi Titik 32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75d150fb035abc5bafec7204238d60fa = L.circleMarker(
+                [-7.206258777776165, 107.61565607311825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_e0b2f80aa43579afcaf3bf547983eca6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9de9a11806ed14c1b99f6dde494e814b = $(`<div id="html_9de9a11806ed14c1b99f6dde494e814b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 33</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 122 &deg;C<br>         <b>Risiko Subsidence:</b> 12.2 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_e0b2f80aa43579afcaf3bf547983eca6.setContent(html_9de9a11806ed14c1b99f6dde494e814b);
+            
+        
+
+        circle_marker_75d150fb035abc5bafec7204238d60fa.bindPopup(popup_e0b2f80aa43579afcaf3bf547983eca6)
+        ;
+
+        
+    
+    
+            circle_marker_75d150fb035abc5bafec7204238d60fa.bindTooltip(
+                `<div>
+                     Evaluasi Titik 33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_023e17d04b9bcb222b0f76d1513785c0 = L.circleMarker(
+                [-7.219484901555742, 107.65102958070551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_f451b1bfd66298d2c80f6cf078289508 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55e3bef0f71b609ae88be265f6c25334 = $(`<div id="html_55e3bef0f71b609ae88be265f6c25334" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 34</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 139 &deg;C<br>         <b>Risiko Subsidence:</b> 10.4 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_f451b1bfd66298d2c80f6cf078289508.setContent(html_55e3bef0f71b609ae88be265f6c25334);
+            
+        
+
+        circle_marker_023e17d04b9bcb222b0f76d1513785c0.bindPopup(popup_f451b1bfd66298d2c80f6cf078289508)
+        ;
+
+        
+    
+    
+            circle_marker_023e17d04b9bcb222b0f76d1513785c0.bindTooltip(
+                `<div>
+                     Evaluasi Titik 34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1dc0b0fd6426235f34bde2e2cad05d1f = L.circleMarker(
+                [-7.207024078829655, 107.63690360000824],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_8d4ecee60a8d141274f4d44350ad0047 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbcb8690753b0556c3632b7fe83cea3e = $(`<div id="html_fbcb8690753b0556c3632b7fe83cea3e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 35</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 153 &deg;C<br>         <b>Risiko Subsidence:</b> 7.5 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_8d4ecee60a8d141274f4d44350ad0047.setContent(html_fbcb8690753b0556c3632b7fe83cea3e);
+            
+        
+
+        circle_marker_1dc0b0fd6426235f34bde2e2cad05d1f.bindPopup(popup_8d4ecee60a8d141274f4d44350ad0047)
+        ;
+
+        
+    
+    
+            circle_marker_1dc0b0fd6426235f34bde2e2cad05d1f.bindTooltip(
+                `<div>
+                     Evaluasi Titik 35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa30a0e58f3d262e462f9111df722371 = L.circleMarker(
+                [-7.222306232829368, 107.62558300665906],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ec75cf281d381d4727df41ba658a84e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45a8735d6702137dfe330d15b10fc6f1 = $(`<div id="html_45a8735d6702137dfe330d15b10fc6f1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 36</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 225 &deg;C<br>         <b>Risiko Subsidence:</b> 3.7 cm/tahun<br>         <br>         <div style="background-color: green; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>SANGAT DIREKOMENDASIKAN</b>         </div>     </div>     </div>`)[0];
+                popup_ec75cf281d381d4727df41ba658a84e1.setContent(html_45a8735d6702137dfe330d15b10fc6f1);
+            
+        
+
+        circle_marker_fa30a0e58f3d262e462f9111df722371.bindPopup(popup_ec75cf281d381d4727df41ba658a84e1)
+        ;
+
+        
+    
+    
+            circle_marker_fa30a0e58f3d262e462f9111df722371.bindTooltip(
+                `<div>
+                     Evaluasi Titik 36
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76f85f8b6eb90015db2174c484a953c2 = L.circleMarker(
+                [-7.219601197321291, 107.62053111586775],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_6e03448dd6395ccc2eb50157aed2d19e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_874a8a4333f492e9906e4a51852eb62e = $(`<div id="html_874a8a4333f492e9906e4a51852eb62e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 37</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 198 &deg;C<br>         <b>Risiko Subsidence:</b> 4.5 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_6e03448dd6395ccc2eb50157aed2d19e.setContent(html_874a8a4333f492e9906e4a51852eb62e);
+            
+        
+
+        circle_marker_76f85f8b6eb90015db2174c484a953c2.bindPopup(popup_6e03448dd6395ccc2eb50157aed2d19e)
+        ;
+
+        
+    
+    
+            circle_marker_76f85f8b6eb90015db2174c484a953c2.bindTooltip(
+                `<div>
+                     Evaluasi Titik 37
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d856c9a9530baf7a3dfdc91358e3188 = L.circleMarker(
+                [-7.221294646043144, 107.62665146448904],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_69dae254368e8b4fe60e2fe6f66329b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26b8860721508ad7eb6c004ef8df8d60 = $(`<div id="html_26b8860721508ad7eb6c004ef8df8d60" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 38</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 119 &deg;C<br>         <b>Risiko Subsidence:</b> 17.6 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_69dae254368e8b4fe60e2fe6f66329b5.setContent(html_26b8860721508ad7eb6c004ef8df8d60);
+            
+        
+
+        circle_marker_9d856c9a9530baf7a3dfdc91358e3188.bindPopup(popup_69dae254368e8b4fe60e2fe6f66329b5)
+        ;
+
+        
+    
+    
+            circle_marker_9d856c9a9530baf7a3dfdc91358e3188.bindTooltip(
+                `<div>
+                     Evaluasi Titik 38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fabcf88ef8e802424b0d5d9297fd58b0 = L.circleMarker(
+                [-7.215937399523682, 107.6398802869204],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_1bf7fbec4931b48d7d0e8431e93395dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16f26d5d935fe45e0c3419fac0454bde = $(`<div id="html_16f26d5d935fe45e0c3419fac0454bde" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 39</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 114 &deg;C<br>         <b>Risiko Subsidence:</b> 17.4 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_1bf7fbec4931b48d7d0e8431e93395dc.setContent(html_16f26d5d935fe45e0c3419fac0454bde);
+            
+        
+
+        circle_marker_fabcf88ef8e802424b0d5d9297fd58b0.bindPopup(popup_1bf7fbec4931b48d7d0e8431e93395dc)
+        ;
+
+        
+    
+    
+            circle_marker_fabcf88ef8e802424b0d5d9297fd58b0.bindTooltip(
+                `<div>
+                     Evaluasi Titik 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19a46737025ca3ea5ee91d15dfc6792e = L.circleMarker(
+                [-7.216089309199229, 107.623802228542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_e5425a167745db9685bb989aae0a1147 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_216ca72f455af1d422868a78e9ef5194 = $(`<div id="html_216ca72f455af1d422868a78e9ef5194" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 40</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 139 &deg;C<br>         <b>Risiko Subsidence:</b> 4.3 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_e5425a167745db9685bb989aae0a1147.setContent(html_216ca72f455af1d422868a78e9ef5194);
+            
+        
+
+        circle_marker_19a46737025ca3ea5ee91d15dfc6792e.bindPopup(popup_e5425a167745db9685bb989aae0a1147)
+        ;
+
+        
+    
+    
+            circle_marker_19a46737025ca3ea5ee91d15dfc6792e.bindTooltip(
+                `<div>
+                     Evaluasi Titik 40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73a0603857b7fa290b6e0d8c0904695f = L.circleMarker(
+                [-7.201430931979764, 107.63804119802992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_079403c4773e0c3cca6f31091807f78c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1bb5d948f1df4233285d9ff10123da9 = $(`<div id="html_a1bb5d948f1df4233285d9ff10123da9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 41</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 184 &deg;C<br>         <b>Risiko Subsidence:</b> 19.8 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_079403c4773e0c3cca6f31091807f78c.setContent(html_a1bb5d948f1df4233285d9ff10123da9);
+            
+        
+
+        circle_marker_73a0603857b7fa290b6e0d8c0904695f.bindPopup(popup_079403c4773e0c3cca6f31091807f78c)
+        ;
+
+        
+    
+    
+            circle_marker_73a0603857b7fa290b6e0d8c0904695f.bindTooltip(
+                `<div>
+                     Evaluasi Titik 41
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39cdf7e723b60e82bea5d33d9a679a0d = L.circleMarker(
+                [-7.207121805980425, 107.62374473670513],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_abb8d9d3d8676f79d407383510896552 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_638de73fcdac80c3474c1877770a76fe = $(`<div id="html_638de73fcdac80c3474c1877770a76fe" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 42</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 217 &deg;C<br>         <b>Risiko Subsidence:</b> 10.8 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_abb8d9d3d8676f79d407383510896552.setContent(html_638de73fcdac80c3474c1877770a76fe);
+            
+        
+
+        circle_marker_39cdf7e723b60e82bea5d33d9a679a0d.bindPopup(popup_abb8d9d3d8676f79d407383510896552)
+        ;
+
+        
+    
+    
+            circle_marker_39cdf7e723b60e82bea5d33d9a679a0d.bindTooltip(
+                `<div>
+                     Evaluasi Titik 42
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c62155f9ab6dae32b19b0265eaa78fc0 = L.circleMarker(
+                [-7.212418155544031, 107.63477714336439],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ec17bc9989aab68472c4e9c459323deb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e491e6062dfa9736e0a5bea4d52a31e = $(`<div id="html_9e491e6062dfa9736e0a5bea4d52a31e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 43</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 210 &deg;C<br>         <b>Risiko Subsidence:</b> 5.4 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_ec17bc9989aab68472c4e9c459323deb.setContent(html_9e491e6062dfa9736e0a5bea4d52a31e);
+            
+        
+
+        circle_marker_c62155f9ab6dae32b19b0265eaa78fc0.bindPopup(popup_ec17bc9989aab68472c4e9c459323deb)
+        ;
+
+        
+    
+    
+            circle_marker_c62155f9ab6dae32b19b0265eaa78fc0.bindTooltip(
+                `<div>
+                     Evaluasi Titik 43
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1b9a969c4be9392b8cabf17a581e613 = L.circleMarker(
+                [-7.207374991163753, 107.63508334319454],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_fe292e88ce8db909e974c32a63760125 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6df17d0ccd5d7fec8800f71b9ec69386 = $(`<div id="html_6df17d0ccd5d7fec8800f71b9ec69386" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 44</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 131 &deg;C<br>         <b>Risiko Subsidence:</b> 19.0 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_fe292e88ce8db909e974c32a63760125.setContent(html_6df17d0ccd5d7fec8800f71b9ec69386);
+            
+        
+
+        circle_marker_f1b9a969c4be9392b8cabf17a581e613.bindPopup(popup_fe292e88ce8db909e974c32a63760125)
+        ;
+
+        
+    
+    
+            circle_marker_f1b9a969c4be9392b8cabf17a581e613.bindTooltip(
+                `<div>
+                     Evaluasi Titik 44
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_031749fa2264349d2dae12784e0ec21b = L.circleMarker(
+                [-7.203290444051565, 107.62120955585918],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ea7e8fdb113c965dbba33da5b8edc710 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f27c708a9d4fe50f9d2b7f8ff7353dc7 = $(`<div id="html_f27c708a9d4fe50f9d2b7f8ff7353dc7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 45</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 210 &deg;C<br>         <b>Risiko Subsidence:</b> 5.5 cm/tahun<br>         <br>         <div style="background-color: orange; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>WASPADA - Subsidence Menengah</b>         </div>     </div>     </div>`)[0];
+                popup_ea7e8fdb113c965dbba33da5b8edc710.setContent(html_f27c708a9d4fe50f9d2b7f8ff7353dc7);
+            
+        
+
+        circle_marker_031749fa2264349d2dae12784e0ec21b.bindPopup(popup_ea7e8fdb113c965dbba33da5b8edc710)
+        ;
+
+        
+    
+    
+            circle_marker_031749fa2264349d2dae12784e0ec21b.bindTooltip(
+                `<div>
+                     Evaluasi Titik 45
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c2db34daba4b72d62d9397c26aeaf9d = L.circleMarker(
+                [-7.225430976937826, 107.64685301837801],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_7fef9fb0d244b99c2d84e9f8d6c8df55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59a5c6a4f1d2e9bbb8054e171cfc8640 = $(`<div id="html_59a5c6a4f1d2e9bbb8054e171cfc8640" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 46</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 240 &deg;C<br>         <b>Risiko Subsidence:</b> 3.3 cm/tahun<br>         <br>         <div style="background-color: green; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>SANGAT DIREKOMENDASIKAN</b>         </div>     </div>     </div>`)[0];
+                popup_7fef9fb0d244b99c2d84e9f8d6c8df55.setContent(html_59a5c6a4f1d2e9bbb8054e171cfc8640);
+            
+        
+
+        circle_marker_4c2db34daba4b72d62d9397c26aeaf9d.bindPopup(popup_7fef9fb0d244b99c2d84e9f8d6c8df55)
+        ;
+
+        
+    
+    
+            circle_marker_4c2db34daba4b72d62d9397c26aeaf9d.bindTooltip(
+                `<div>
+                     Evaluasi Titik 46
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac5f2804d482ec846e1859b1d6ac61b3 = L.circleMarker(
+                [-7.201123183683155, 107.63233613725582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_ca8c2703ca843e41ac364fe6ec588515 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfa9c3f0abfdbf3df98214dba3b504bf = $(`<div id="html_bfa9c3f0abfdbf3df98214dba3b504bf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 47</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 176 &deg;C<br>         <b>Risiko Subsidence:</b> 17.4 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_ca8c2703ca843e41ac364fe6ec588515.setContent(html_bfa9c3f0abfdbf3df98214dba3b504bf);
+            
+        
+
+        circle_marker_ac5f2804d482ec846e1859b1d6ac61b3.bindPopup(popup_ca8c2703ca843e41ac364fe6ec588515)
+        ;
+
+        
+    
+    
+            circle_marker_ac5f2804d482ec846e1859b1d6ac61b3.bindTooltip(
+                `<div>
+                     Evaluasi Titik 47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe0718165462b23123f1703f35358f9f = L.circleMarker(
+                [-7.199593086262232, 107.63607070134955],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_aa1d3909f315a89dee4e21e6158ac2e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_665550a5af9af735fc5d92ede386e318 = $(`<div id="html_665550a5af9af735fc5d92ede386e318" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 48</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 213 &deg;C<br>         <b>Risiko Subsidence:</b> 12.7 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_aa1d3909f315a89dee4e21e6158ac2e0.setContent(html_665550a5af9af735fc5d92ede386e318);
+            
+        
+
+        circle_marker_fe0718165462b23123f1703f35358f9f.bindPopup(popup_aa1d3909f315a89dee4e21e6158ac2e0)
+        ;
+
+        
+    
+    
+            circle_marker_fe0718165462b23123f1703f35358f9f.bindTooltip(
+                `<div>
+                     Evaluasi Titik 48
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ae88c68a17338d2dc387d583ae86b18 = L.circleMarker(
+                [-7.227571393053234, 107.62390823879399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_bce73f0cd1ebf02ee4b8a6df04a7acf9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d9a9192dc56f6460096c8a1dd149921 = $(`<div id="html_0d9a9192dc56f6460096c8a1dd149921" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 49</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 213 &deg;C<br>         <b>Risiko Subsidence:</b> 13.9 cm/tahun<br>         <br>         <div style="background-color: red; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>BAHAYA - Tidak Direkomendasikan</b>         </div>     </div>     </div>`)[0];
+                popup_bce73f0cd1ebf02ee4b8a6df04a7acf9.setContent(html_0d9a9192dc56f6460096c8a1dd149921);
+            
+        
+
+        circle_marker_3ae88c68a17338d2dc387d583ae86b18.bindPopup(popup_bce73f0cd1ebf02ee4b8a6df04a7acf9)
+        ;
+
+        
+    
+    
+            circle_marker_3ae88c68a17338d2dc387d583ae86b18.bindTooltip(
+                `<div>
+                     Evaluasi Titik 49
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_878678df461fc013d3a8c19b1c42ffc0 = L.circleMarker(
+                [-7.212139399227812, 107.64636291754732],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_eb3bf3c561243b228bf08f4123f7aaef);
+        
+    
+        var popup_0c60b57388b7f252815d21e5072b082f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24b697bd442bdf6bafa120ff3f99935f = $(`<div id="html_24b697bd442bdf6bafa120ff3f99935f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 250px;">         <h4 style="margin-top: 0; margin-bottom: 5px; color: #333;">Informasi SDSS: Titik Bor 50</h4>         <hr style="margin: 5px 0;">         <b>Potensi Panas Bumi:</b> 250 &deg;C<br>         <b>Risiko Subsidence:</b> 0.9 cm/tahun<br>         <br>         <div style="background-color: green; color: white; padding: 6px; text-align: center; border-radius: 5px; font-size: 13px;">             <b>SANGAT DIREKOMENDASIKAN</b>         </div>     </div>     </div>`)[0];
+                popup_0c60b57388b7f252815d21e5072b082f.setContent(html_24b697bd442bdf6bafa120ff3f99935f);
+            
+        
+
+        circle_marker_878678df461fc013d3a8c19b1c42ffc0.bindPopup(popup_0c60b57388b7f252815d21e5072b082f)
+        ;
+
+        
+    
+    
+            circle_marker_878678df461fc013d3a8c19b1c42ffc0.bindTooltip(
+                `<div>
+                     Evaluasi Titik 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
